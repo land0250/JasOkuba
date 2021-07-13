@@ -1,0 +1,18 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-assets>
+    <a-asset-item id="jas" src="jas.glb"></a-asset-item>
+  </a-assets>
+  <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
+
+    <a-marker type='pattern' url='pattern-QR_967990.patt'>
+      <a-entity gltf-model="#jas" scale="0.15 0.15 0.15" position="0 0 0" rotation="-50 0 0">
+    </a-marker>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+  </body>
+  </html>
